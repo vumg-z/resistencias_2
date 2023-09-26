@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyudaActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/ayudaTexto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Cuando abres la aplicación, verás una barra de herramientas en la parte superior y una pantalla en blanco con varios botones de colores (Negro, Marrón, Rojo, etc.) y botones de selección de bandas (Banda 1, Banda 2, etc.).
+Selección de una Banda:
+
+Comienza por elegir una banda a la que deseas asignar un color. Esto se hace tocando uno de los botones de 'Banda'.
+Por ejemplo, si quieres seleccionar la primera banda, toca el botón 'Banda 1'.
+Una vez seleccionada una banda, recibirás una notificación en la pantalla que te informará qué banda se ha seleccionado (por ejemplo, 'Banda 1 Seleccionada').
+Asignación de un Color a la Banda:
+
+Después de seleccionar una banda, elige un color para esa banda tocando uno de los botones de color.
+La aplicación te mostrará visualmente el color que has seleccionado para la banda. La pantalla mostrará el número de la banda seguido del nombre del color. Por ejemplo, si has seleccionado la Banda 1 y has elegido el color Rojo, la pantalla mostrará: 'Banda 1: Rojo'.
+Continuar Asignando Colores:
+
+Puedes proceder a seleccionar otras bandas y asignar colores de la misma manera. Simplemente selecciona otra banda tocando su botón y luego elige un color para ella.
+Opciones de la Barra de Herramientas:
+
+En la parte superior, hay una barra de herramientas que tiene opciones de menú.
+Al tocar en las opciones, obtendrás dos opciones:
+La primera opción te redirigirá a la 'AyudaActivity', que presumiblemente proporciona ayuda o información adicional sobre la aplicación.
+La segunda opción mostrará un mensaje emergente con el texto 'ChinoDEV'.
+Visualización de los Colores Seleccionados:
+
+En cualquier momento, puedes consultar la pantalla para revisar los colores que has elegido para cada banda. Esto ayuda a asegurarte de que has seleccionado los colores correctos.
+Salir de la Aplicación:
+
+Cuando hayas terminado, simplemente utiliza el botón de retroceso en tu dispositivo o sal de la aplicación de la manera habitual."
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="back"
+        android:onClick="onBackClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayudaTexto"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
